@@ -1,76 +1,1130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Restaurant Demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"> </head>
-<body>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Indian Flavours - Restaurantly Template</title>
+  <meta name="description" content="A dummy restaurant website featuring popular Indian dishes.">
+  <meta name="keywords" content="Indian food, restaurant, menu, chatbot demo, Mumbai, Delhi">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">My Restaurant</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#reservations">Reservations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Restaurantly
+  * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header fixed-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 98765 43210</span></i>
         </div>
-    </nav>
+        <div class="languages d-none d-md-flex align-items-center">
+          <ul>
+            <li>En</li>
+            <li><a href="#">Hi</a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
 
-    <div class="container my-5">
-        <h1 class="text-center">Welcome to My Awesome Restaurant!</h1>
-        <p class="lead text-center">Experience the finest culinary delights.</p>
+    <div class="branding d-flex align-items-cente">
 
-        <section id="menu" class="my-5">
-            <h2>Our Menu</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Appetizers</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Paneer Tikka
-                            <span class="badge bg-primary rounded-pill">₹280</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Spring Rolls
-                            <span class="badge bg-primary rounded-pill">₹220</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h3>Main Courses</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Margherita Pizza
-                            <span class="badge bg-primary rounded-pill">₹350</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Butter Chicken
-                            <span class="badge bg-primary rounded-pill">₹450</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">Indian Flavours</h1>
+        </a>
 
-        <section id="reservations" class="my-5">
-            <h2>Reservations</h2>
-            <p>To book a table, please use our upcoming chatbot or call us at +91-9876543210.</p>
-            <button class="btn btn-success">Book a Table (Chatbot Coming Soon)</button>
-        </section>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home<br></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#specials">Specials</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#chefs">Chefs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Our Story</a></li>
+                <li class="dropdown"><a href="#"><span>Special Offers</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Weekend Deals</a></li>
+                    <li><a href="#">Family Combos</a></li>
+                    <li><a href="#">Student Discounts</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Feedback</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
 
-        <section id="contact" class="my-5">
-            <h2>Contact Us</h2>
-            <p>Address: 123 Food Street, Mumbai, India</p>
-            <p>Email: info@myrestaurant.com</p>
-            <p>Phone: +91-9876543210</p>
-        </section>
+        <a class="btn-book-a-table d-none d-xl-block" href="#book-a-table">Book a Table</a>
+
+      </div>
+
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eGYXJ6jJgWP98B" crossorigin="anonymous"></script>
-    <script src="script.js"></script> </body>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="https://placehold.co/1920x1080/000000/FFFFFF?text=Indian+Restaurant+Hero" alt="Restaurant interior with Indian food" data-aos="fade-in">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 d-flex flex-column align-items-center align-items-lg-start">
+            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to <span>Indian Flavours</span></h2>
+            <p data-aos="fade-up" data-aos-delay="200">Savour the authentic tastes of India!</p>
+            <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+              <a href="#menu" class="cta-btn">Our Menu</a>
+              <a href="#book-a-table" class="cta-btn">Book a Table</a>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex align-items-center justify-content-center" data-aos="zoom-in" data-aos-delay="300">
+            <!-- Placeholder for video or other content -->
+            <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a> -->
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-lg-7 position-relative about-img">
+            <img src="https://placehold.co/700x500/CCCCCC/000000?text=About+Us+Image" class="img-fluid" alt="About Us">
+            <div class="call-us position-absolute">
+              <h4>Book a Table</h4>
+              <p>+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="100">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                At Indian Flavours, we bring you the rich and diverse culinary heritage of India. Our chefs craft each dish with authentic spices and traditional techniques, ensuring a memorable dining experience.
+              </p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> Authentic Indian recipes from across regions.</li>
+                <li><i class="bi bi-check-circle-fill"></i> Fresh, locally sourced ingredients whenever possible.</li>
+                <li><i class="bi bi-check-circle-fill"></i> A warm and inviting ambiance for family and friends.</li>
+              </ul>
+              <p>
+                From the fiery curries of the North to the tangy delights of the South, our menu is a journey through India's vibrant food landscape. We are committed to providing you with an unforgettable taste of India.
+              </p>
+
+              <div class="text-center text-lg-start">
+                <a href="#book-a-table" class="btn-book-a-table">Book a Table</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <span>01</span>
+              <h4><a href="" class="stretched-link">Authentic Flavours</a></h4>
+              <p>Our dishes are prepared using traditional Indian recipes and authentic spices, ensuring a true taste of India.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <span>02</span>
+              <h4><a href="" class="stretched-link">Fresh Ingredients</a></h4>
+              <p>We believe in quality. All our ingredients are fresh and carefully selected to bring out the best in every dish.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <span>03</span>
+              <h4><a href="" class="stretched-link">Warm Hospitality</a></h4>
+              <p>Experience the warmth of Indian hospitality with our friendly staff and inviting ambiance, perfect for any occasion.</p>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Menu<br></h2>
+        <p>Check Our <span>Delicious Menu</span></p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+              <h4>Starters</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+              <h4>Breakfast</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+              <h4>Lunch</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+              <h4>Dinner</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-snacks">
+              <h4>Snacks</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-desserts">
+              <h4>Desserts</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="menu-starters">
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Paneer+Tikka" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Paneer+Tikka" class="menu-img img-fluid" alt="Paneer Tikka"></a>
+                <h4>Paneer Tikka <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Paneer, Tomato, Cream, Spices (Mild)</p>
+                <p class="price">₹280</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Samosa" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Samosa" class="menu-img img-fluid" alt="Samosa"></a>
+                <h4>Samosa <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Potatoes, Peas, Spices, Flour (Spicy)</p>
+                <p class="price">₹80</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Medu+Vada" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Medu+Vada" class="menu-img img-fluid" alt="Medu Vada"></a>
+                <h4>Medu Vada <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Black Lentils, Spices (Mild)</p>
+                <p class="price">₹100</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Tandoori+Chicken" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Tandoori+Chicken" class="menu-img img-fluid" alt="Tandoori Chicken"></a>
+                <h4>Tandoori Chicken <span class="badge bg-danger ms-2">Non-Veg</span></h4>
+                <p class="ingredients">Chicken, Yogurt, Spices (Spicy)</p>
+                <p class="price">₹400</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Dahi+Bhalla" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Dahi+Bhalla" class="menu-img img-fluid" alt="Dahi Bhalla"></a>
+                <h4>Dahi Bhalla <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Lentil Dumplings, Yogurt, Chutneys, Spices (Sweet, Sour)</p>
+                <p class="price">₹180</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Papri+Chaat" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Papri+Chaat" class="menu-img img-fluid" alt="Papri Chaat"></a>
+                <h4>Papri Chaat <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Crispy Wafers, Potatoes, Chickpeas, Chutneys, Yogurt (Spicy, Tangy)</p>
+                <p class="price">₹150</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Bhelpuri" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Bhelpuri" class="menu-img img-fluid" alt="Bhelpuri"></a>
+                <h4>Bhelpuri <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Puffed Rice, Vegetables, Chutneys, Spices (Spicy, Tangy)</p>
+                <p class="price">₹100</p>
+              </div>
+            </div>
+          </div><!-- End Starters Menu Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast">
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Masala+Dosa" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Masala+Dosa" class="menu-img img-fluid" alt="Masala Dosa"></a>
+                <h4>Masala Dosa <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Rice Batter, Potatoes, Onions, Spices (Spicy)</p>
+                <p class="price">₹150</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Chole+Bhature" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Chole+Bhature" class="menu-img img-fluid" alt="Chole Bhature"></a>
+                <h4>Chole Bhature <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Chickpeas, Flour, Spices (Spicy)</p>
+                <p class="price">₹220</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Idli+Sambar" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Idli+Sambar" class="menu-img img-fluid" alt="Idli Sambar"></a>
+                <h4>Idli Sambar <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Rice Batter, Lentils, Vegetables, Spices (Mild)</p>
+                <p class="price">₹130</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Medu+Vada" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Medu+Vada" class="menu-img img-fluid" alt="Medu Vada"></a>
+                <h4>Medu Vada <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Black Lentils, Spices (Mild)</p>
+                <p class="price">₹100</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Uttapam" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Uttapam" class="menu-img img-fluid" alt="Uttapam"></a>
+                <h4>Uttapam <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Rice Batter, Onions, Tomatoes, Spices (Mild)</p>
+                <p class="price">₹180</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Poha" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Poha" class="menu-img img-fluid" alt="Poha"></a>
+                <h4>Poha <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Flattened Rice, Onions, Peanuts, Spices (Mild)</p>
+                <p class="price">₹120</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Upma" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Upma" class="menu-img img-fluid" alt="Upma"></a>
+                <h4>Upma <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Semolina, Vegetables, Spices (Mild)</p>
+                <p class="price">₹150</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Paratha" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Paratha" class="menu-img img-fluid" alt="Paratha"></a>
+                <h4>Paratha <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Whole Wheat Flour, Ghee (Mild)</p>
+                <p class="price">₹60</p>
+              </div>
+            </div>
+          </div><!-- End Breakfast Menu Content -->
+
+          <div class="tab-pane fade" id="menu-lunch">
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Chicken+Biryani" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Chicken+Biryani" class="menu-img img-fluid" alt="Chicken Biryani"></a>
+                <h4>Chicken Biryani <span class="badge bg-danger ms-2">Non-Veg</span></h4>
+                <p class="ingredients">Chicken, Basmati Rice, Spices, Yogurt (Spicy)</p>
+                <p class="price">₹480</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Vegetable+Biryani" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Vegetable+Biryani" class="menu-img img-fluid" alt="Vegetable Biryani"></a>
+                <h4>Vegetable Biryani <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Mixed Vegetables, Basmati Rice, Spices, Yogurt (Mild)</p>
+                <p class="price">₹390</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Kathi+Roll" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Kathi+Roll" class="menu-img img-fluid" alt="Kathi Roll"></a>
+                <h4>Kathi Roll <span class="badge bg-danger ms-2">Non-Veg</span>/<span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Chicken/Paneer, Flour, Vegetables, Spices (Spicy)</p>
+                <p class="price">₹250</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Rajma+Chawal" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Rajma+Chawal" class="menu-img img-fluid" alt="Rajma Chawal"></a>
+                <h4>Rajma Chawal <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Kidney Beans, Rice, Spices (Mild)</p>
+                <p class="price">₹280</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Bisi+Bele+Bath" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Bisi+Bele+Bath" class="menu-img img-fluid" alt="Bisi Bele Bath"></a>
+                <h4>Bisi Bele Bath <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Rice, Lentils, Vegetables, Tamarind, Spices (Spicy)</p>
+                <p class="price">₹280</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Pav+Bhaji" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Pav+Bhaji" class="menu-img img-fluid" alt="Pav Bhaji"></a>
+                <h4>Pav Bhaji <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Mixed Vegetables, Potatoes, Butter, Spices, Bread (Spicy)</p>
+                <p class="price">₹250</p>
+              </div>
+            </div>
+          </div><!-- End Lunch Menu Content -->
+
+          <div class="tab-pane fade" id="menu-dinner">
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Butter+Chicken" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Butter+Chicken" class="menu-img img-fluid" alt="Butter Chicken"></a>
+                <h4>Butter Chicken <span class="badge bg-danger ms-2">Non-Veg</span></h4>
+                <p class="ingredients">Chicken, Tomato, Cream, Spices (Mild)</p>
+                <p class="price">₹450</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Paneer+Butter+Masala" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Paneer+Butter+Masala" class="menu-img img-fluid" alt="Paneer Butter Masala"></a>
+                <h4>Paneer Butter Masala <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Paneer, Tomato, Cream, Spices (Mild)</p>
+                <p class="price">₹380</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Dal+Makhani" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Dal+Makhani" class="menu-img img-fluid" alt="Dal Makhani"></a>
+                <h4>Dal Makhani <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Black Lentils, Kidney Beans, Cream, Butter, Spices (Mild)</p>
+                <p class="price">₹320</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Palak+Paneer" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Palak+Paneer" class="menu-img img-fluid" alt="Palak Paneer"></a>
+                <h4>Palak Paneer <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Paneer, Spinach, Spices (Mild)</p>
+                <p class="price">₹350</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Rogan+Josh" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Rogan+Josh" class="menu-img img-fluid" alt="Rogan Josh"></a>
+                <h4>Rogan Josh <span class="badge bg-danger ms-2">Non-Veg</span></h4>
+                <p class="ingredients">Lamb, Yogurt, Spices (Spicy)</p>
+                <p class="price">₹550</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Aloo+Gobi" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Aloo+Gobi" class="menu-img img-fluid" alt="Aloo Gobi"></a>
+                <h4>Aloo Gobi <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Potatoes, Cauliflower, Spices (Mild)</p>
+                <p class="price">₹280</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Malai+Kofta" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Malai+Kofta" class="menu-img img-fluid" alt="Malai Kofta"></a>
+                <h4>Malai Kofta <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Paneer, Potatoes, Cream, Cashews (Sweet)</p>
+                <p class="price">₹420</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Fish+Curry" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Fish+Curry" class="menu-img img-fluid" alt="Fish Curry"></a>
+                <h4>Fish Curry <span class="badge bg-danger ms-2">Non-Veg</span></h4>
+                <p class="ingredients">Fish, Coconut Milk, Tamarind, Spices (Spicy)</p>
+                <p class="price">₹480</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Chicken+Chettinad" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Chicken+Chettinad" class="menu-img img-fluid" alt="Chicken Chettinad"></a>
+                <h4>Chicken Chettinad <span class="badge bg-danger ms-2">Non-Veg</span></h4>
+                <p class="ingredients">Chicken, Black Pepper, Fennel, Spices (Spicy)</p>
+                <p class="price">₹500</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Mutton+Rogan+Josh" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Mutton+Rogan+Josh" class="menu-img img-fluid" alt="Mutton Rogan Josh"></a>
+                <h4>Mutton Rogan Josh <span class="badge bg-danger ms-2">Non-Veg</span></h4>
+                <p class="ingredients">Mutton, Yogurt, Spices (Spicy)</p>
+                <p class="price">₹580</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Goan+Fish+Curry" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Goan+Fish+Curry" class="menu-img img-fluid" alt="Goan Fish Curry"></a>
+                <h4>Goan Fish Curry <span class="badge bg-danger ms-2">Non-Veg</span></h4>
+                <p class="ingredients">Fish, Coconut, Red Chillies, Tamarind (Spicy)</p>
+                <p class="price">₹490</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Hyderabadi+Biryani" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Hyderabadi+Biryani" class="menu-img img-fluid" alt="Hyderabadi Biryani"></a>
+                <h4>Hyderabadi Biryani <span class="badge bg-danger ms-2">Non-Veg</span></h4>
+                <p class="ingredients">Chicken/Mutton, Basmati Rice, Saffron, Spices (Spicy)</p>
+                <p class="price">₹520</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Kofta+Curry" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Kofta+Curry" class="menu-img img-fluid" alt="Kofta Curry"></a>
+                <h4>Kofta Curry <span class="badge bg-secondary ms-2">Veg/Non-Veg</span></h4>
+                <p class="ingredients">Mixed Vegetables/Meat, Spices, Cream (Mild)</p>
+                <p class="price">₹400</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Shahi+Paneer" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Shahi+Paneer" class="menu-img img-fluid" alt="Shahi Paneer"></a>
+                <h4>Shahi Paneer <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Paneer, Cream, Cashews, Spices (Sweet)</p>
+                <p class="price">₹400</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Sarson+Ka+Saag" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Sarson+Ka+Saag" class="menu-img img-fluid" alt="Sarson Ka Saag"></a>
+                <h4>Sarson Ka Saag <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Mustard Greens, Spinach, Spices, Butter (Mild)</p>
+                <p class="price">₹300</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Mutter+Paneer" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Mutter+Paneer" class="menu-img img-fluid" alt="Mutter Paneer"></a>
+                <h4>Mutter Paneer <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Paneer, Peas, Tomato, Spices (Mild)</p>
+                <p class="price">₹350</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Chapati/Roti" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Chapati/Roti" class="menu-img img-fluid" alt="Chapati/Roti"></a>
+                <h4>Chapati/Roti <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Whole Wheat Flour (Mild)</p>
+                <p class="price">₹20</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Naan" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Naan" class="menu-img img-fluid" alt="Naan"></a>
+                <h4>Naan <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Refined Flour, Yeast (Mild)</p>
+                <p class="price">₹50</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Makki+di+Roti" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Makki+di+Roti" class="menu-img img-fluid" alt="Makki di Roti"></a>
+                <h4>Makki di Roti <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Corn Flour (Mild)</p>
+                <p class="price">₹50</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Appam" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Appam" class="menu-img img-fluid" alt="Appam"></a>
+                <h4>Appam <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Rice Batter, Coconut Milk (Mild)</p>
+                <p class="price">₹100</p>
+              </div>
+            </div>
+          </div><!-- End Dinner Menu Content -->
+
+          <div class="tab-pane fade" id="menu-snacks">
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Pani+Puri" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Pani+Puri" class="menu-img img-fluid" alt="Pani Puri"></a>
+                <h4>Pani Puri <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Puri, Potatoes, Chickpeas, Spiced Water (Spicy)</p>
+                <p class="price">₹60</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Vada+Pav" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Vada+Pav" class="menu-img img-fluid" alt="Vada Pav"></a>
+                <h4>Vada Pav <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Potatoes, Chickpea Flour, Bread, Spices (Spicy)</p>
+                <p class="price">₹70</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Dhokla" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Dhokla" class="menu-img img-fluid" alt="Dhokla"></a>
+                <h4>Dhokla <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Gram Flour, Semolina, Spices (Mild)</p>
+                <p class="price">₹120</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Lassi" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Lassi" class="menu-img img-fluid" alt="Lassi"></a>
+                <h4>Lassi <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Yogurt, Sugar/Salt, Water (Sweet)</p>
+                <p class="price">₹100</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Rasam" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Rasam" class="menu-img img-fluid" alt="Rasam"></a>
+                <h4>Rasam <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Tamarind, Tomatoes, Spices (Spicy)</p>
+                <p class="price">₹80</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Sambhar" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Sambhar" class="menu-img img-fluid" alt="Sambhar"></a>
+                <h4>Sambhar <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Lentils, Vegetables, Tamarind, Spices (Mild)</p>
+                <p class="price">₹120</p>
+              </div>
+            </div>
+          </div><!-- End Snacks Menu Content -->
+
+          <div class="tab-pane fade" id="menu-desserts">
+            <div class="row gy-5">
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Gulab+Jamun" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Gulab+Jamun" class="menu-img img-fluid" alt="Gulab Jamun"></a>
+                <h4>Gulab Jamun <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Milk Solids, Sugar Syrup, Cardamom (Sweet)</p>
+                <p class="price">₹120</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Jalebi" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Jalebi" class="menu-img img-fluid" alt="Jalebi"></a>
+                <h4>Jalebi <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Flour, Sugar Syrup, Saffron (Sweet)</p>
+                <p class="price">₹100</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Gajar+Halwa" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Gajar+Halwa" class="menu-img img-fluid" alt="Gajar Halwa"></a>
+                <h4>Gajar Halwa <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Carrots, Milk, Sugar, Ghee, Nuts (Sweet)</p>
+                <p class="price">₹180</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Kulfi" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Kulfi" class="menu-img img-fluid" alt="Kulfi"></a>
+                <h4>Kulfi <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Milk, Sugar, Cardamom, Nuts (Sweet)</p>
+                <p class="price">₹150</p>
+              </div>
+              <div class="col-lg-4 menu-item">
+                <a href="https://placehold.co/400x300/CCCCCC/000000?text=Kheer" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Kheer" class="menu-img img-fluid" alt="Kheer"></a>
+                <h4>Kheer <span class="badge bg-success ms-2">Veg</span></h4>
+                <p class="ingredients">Rice, Milk, Sugar, Nuts, Cardamom (Sweet)</p>
+                <p class="price">₹150</p>
+              </div>
+            </div>
+          </div><!-- End Desserts Menu Content -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Menu Section -->
+
+    <!-- Specials Section -->
+    <section id="specials" class="specials section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Specials</h2>
+          <p>Check Our <span>Specials</span></p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#specials-tab-1">Chef's Special Biryani</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-2">Royal Thali</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-3">Seafood Platter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-4">Vegan Delights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#specials-tab-5">Dessert Extravaganza</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="specials-tab-1">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Chef's Special Biryani</h3>
+                    <p class="fst-italic">A unique blend of aromatic basmati rice, tender marinated meat (or vegetables), and exotic spices, slow-cooked to perfection. A signature dish from our head chef.</p>
+                    <p>Ingredients: Basmati Rice, choice of Chicken/Mutton/Paneer, Saffron, Cardamom, Cloves, Cinnamon, Fresh Herbs. Flavour: Rich & Aromatic.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://placehold.co/400x300/CCCCCC/000000?text=Special+Biryani" alt="Chef's Special Biryani" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-2">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Royal Thali</h3>
+                    <p class="fst-italic">Experience a king's feast with our Royal Thali, a grand platter featuring a selection of our finest curries, bread, rice, and dessert.</p>
+                    <p>Includes: Dal Makhani, Shahi Paneer, Butter Chicken (or Veg Curry), Naan, Rice, Raita, Salad, Gulab Jamun. Flavour: Diverse & Balanced.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://placehold.co/400x300/CCCCCC/000000?text=Royal+Thali" alt="Royal Thali" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-3">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Seafood Platter</h3>
+                    <p class="fst-italic">A delightful assortment of grilled and curried seafood, showcasing the coastal flavours of India.</p>
+                    <p>Includes: Tandoori Prawns, Fish Fry, Goan Fish Curry, Lemon wedges, Mint Chutney. Flavour: Tangy & Spicy.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://placehold.co/400x300/CCCCCC/000000?text=Seafood+Platter" alt="Seafood Platter" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-4">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Vegan Delights</h3>
+                    <p class="fst-italic">A specially curated selection of plant-based Indian dishes, rich in flavour and wholesome goodness.</p>
+                    <p>Includes: Aloo Gobi, Chana Masala, Vegetable Biryani, Roti, Salad. Flavour: Wholesome & Mildly Spiced.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://placehold.co/400x300/CCCCCC/000000?text=Vegan+Delights" alt="Vegan Delights" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="specials-tab-5">
+                <div class="row gy-4">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Dessert Extravaganza</h3>
+                    <p class="fst-italic">Indulge your sweet tooth with a grand assortment of traditional Indian desserts, perfect for sharing.</p>
+                    <p>Includes: Gulab Jamun, Jalebi, Gajar Halwa, Kulfi, Kheer. Flavour: Sweet & Aromatic.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="https://placehold.co/400x300/CCCCCC/000000?text=Dessert+Extravaganza" alt="Dessert Extravaganza" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Specials Section -->
+
+    <!-- Events Section -->
+    <section id="events" class="events section">
+
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Events</h2>
+          <p>Organize Your <span>Events</span> in our Restaurant</p>
+        </div>
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://placehold.co/700x500/CCCCCC/000000?text=Birthday+Party" class="img-fluid" alt="Birthday Party">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Birthday Parties</h3>
+                  <div class="price">
+                    <p><span>₹9999 onwards</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Celebrate your special day with us! We offer customized menus and decorations to make your birthday party unforgettable.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Private dining areas available.</li>
+                    <li><i class="bi bi-check-circled"></i> Customizable Indian food catering options.</li>
+                    <li><i class="bi bi-check-circled"></i> Dedicated event coordinator.</li>
+                  </ul>
+                  <p>
+                    From intimate gatherings to grand celebrations, Indian Flavours provides the perfect setting for your birthday. Contact us to plan your event.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Event Item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://placehold.co/700x500/CCCCCC/000000?text=Private+Parties" class="img-fluid" alt="Private Parties">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Private Parties</h3>
+                  <div class="price">
+                    <p><span>₹14999 onwards</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Host your private events, corporate gatherings, or family reunions in our elegant setting. We ensure privacy and a bespoke experience.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Exclusive use of designated areas.</li>
+                    <li><i class="bi bi-check-circled"></i> Tailored menus to suit your preferences.</li>
+                    <li><i class="bi bi-check-circled"></i> Professional service for a seamless event.</li>
+                  </ul>
+                  <p>
+                    Whether it's a corporate dinner or a family get-together, our team will work with you to create a personalized event that exceeds your expectations.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Event Item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="https://placehold.co/700x500/CCCCCC/000000?text=Custom+Events" class="img-fluid" alt="Custom Events">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Custom Events</h3>
+                  <div class="price">
+                    <p><span>₹19999 onwards</span></p>
+                  </div>
+                  <p class="fst-italic">
+                    Have a unique event in mind? We're here to make it happen. From themed parties to cultural celebrations, we can customize every detail.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Flexible event spaces.</li>
+                    <li><i class="bi bi-check-circled"></i> Creative menu development.</li>
+                    <li><i class="bi bi-check-circled"></i> Partnerships with local entertainers.</li>
+                  </ul>
+                  <p>
+                    Let your imagination run wild! Our team is dedicated to bringing your vision to life, ensuring your custom event is truly one-of-a-kind.
+                  </p>
+                </div>
+              </div>
+            </div><!-- End Event Item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Events Section -->
+
+    <!-- Book A Table Section -->
+    <section id="book-a-table" class="book-a-table section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Reservation</h2>
+          <p>Book Your <span>Table</span> With Us</p>
+        </div>
+
+        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="date" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="time" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-lg-4 col-md-6 form-group mt-3">
+              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 for number of people">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your booking request was sent. We will call back to confirm your reservation. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Book a Table</button></div>
+        </form>
+
+      </div>
+
+    </section><!-- /Book A Table Section -->
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Some photos from <span>Our Restaurant</span></p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+1" class="glightbox" data-gall="gallery-item">
+                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+1" alt="Gallery image 1" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+2" class="glightbox" data-gall="gallery-item">
+                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+2" alt="Gallery image 2" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+3" class="glightbox" data-gall="gallery-item">
+                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+3" alt="Gallery image 3" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+4" class="glightbox" data-gall="gallery-item">
+                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+4" alt="Gallery image 4" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+5" class="glightbox" data-gall="gallery-item">
+                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+5" alt="Gallery image 5" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+6" class="glightbox" data-gall="gallery-item">
+                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+6" alt="Gallery image 6" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+7" class="glightbox" data-gall="gallery-item">
+                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+7" alt="Gallery image 7" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+8" class="glightbox" data-gall="gallery-item">
+                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+8" alt="Gallery image 8" class="img-fluid">
+              </a>
+            </div>
+          </div><!-- End Gallery Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+
+        <div class="mb-3">
+          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smz!2smy!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Our Address</h3>
+                <p>123 Food Street, Mumbai, India</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>contact@example.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-clock flex-shrink-0"></i>
+              <div>
+                <h3>Opening Hours</h3>
+                <div>
+                  <strong>Mon-Sat:</strong> 11AM - 11PM<br>
+                  <strong>Sunday:</strong> Closed
+                </div>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+          </div>
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="info">
+            <h4>Address:</h4>
+            <p>
+              123 Food Street <br>
+              Mumbai, India<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div class="info">
+            <h4>Reservations:</h4>
+            <p>
+              <strong>Phone:</strong> +91 98765 43210<br>
+              <strong>Email:</strong> contact@example.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div class="info">
+            <h4>Opening Hours:</h4>
+            <p>
+              <strong>Mon-Sat:</strong> 11AM - 11PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-share icon"></i>
+          <div class="info">
+            <h4>Follow Us</h4>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Restaurantly</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
