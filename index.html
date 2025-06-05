@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Indian Flavours - Restaurantly Template</title>
+  <title>Indian Flavours </title>
   <meta name="description" content="A dummy restaurant website featuring popular Indian dishes.">
   <meta name="keywords" content="Indian food, restaurant, menu, chatbot demo, Mumbai, Delhi">
 
@@ -32,21 +32,6 @@
 <body class="index-page">
 
   <header id="header" class="header fixed-top">
-
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 999999999</span></i>
-        </div>
-        <div class="languages d-none d-md-flex align-items-center">
-          <ul>
-            <li>En</li>
-            <li><a href="#">Hi</a></li>
-          </ul>
-        </div>
-      </div>
-    </div><!-- End Top Bar -->
 
     <div class="branding d-flex align-items-cente">
 
@@ -98,7 +83,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="https://placehold.co/1920x1080/000000/FFFFFF?text=Indian+Restaurant+Hero" alt="Restaurant interior with Indian food" data-aos="fade-in">
+      <img src="assets/img/hero-bg.jpg" alt="Restaurant interior with Indian food" data-aos="fade-in">
 
       <div class="container">
         <div class="row">
@@ -121,7 +106,7 @@
       <div class="container" data-aos="fade-up">
         <div class="row gy-4">
           <div class="col-lg-7 position-relative about-img">
-            <img src="https://placehold.co/700x500/CCCCCC/000000?text=About+Us+Image" class="img-fluid" alt="About Us">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="About Us">
             <div class="call-us position-absolute">
               <h4>Book a Table</h4>
               <p>+91 9999999999</p>
@@ -153,6 +138,11 @@
 
     <!-- Why Us Section -->
     <section id="why-us" class="why-us section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>WHY US</h2>
+        <p>Why Choose Our Restaurant</p>
+      </div><!-- End Section Title -->
 
       <div class="container">
 
@@ -193,16 +183,16 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Menu<br></h2>
-        <p>Check Our <span>Delicious Menu</span></p>
+        <h2>Our Menu</h2>
+        <p>Check Our Delicious Menu</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <!-- Menu Filters -->
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="menu-filters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <ul class="menu-filters isotope-filters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-veg">Veg</li>
               <li data-filter=".filter-nonveg">Non-Veg</li>
@@ -216,12 +206,12 @@
         </div>
 
         <!-- Menu Items Container -->
-        <div class="row gy-5 isotope-container">
+        <div class="row isotope-container" data-aos="fade-up" data-aos-delay="200">
 
           <!-- STARTERS -->
-          <div class="col-lg-4 menu-item filter-veg filter-snacks">
+          <div class="col-lg-4 menu-item isotope-item filter-veg filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Paneer+Tikka" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Paneer+Tikka" class="menu-img img-fluid" alt="Paneer Tikka"></a>
+              <a href="assets/img/menu/Paneer-Tikka.jpg" class="glightbox"><img src="assets/img/menu/Paneer-Tikka.jpg" class="menu-img img-fluid" alt="Paneer Tikka"></a>
               <div class="menu-content">
                 <h4>Paneer Tikka <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Paneer, Tomato, Cream, Spices (Mild)</p>
@@ -229,7 +219,7 @@
               <span class="price">₹280</span>
             </div>
             <div class="menu-details">
-              <p><strong>Description:</strong> Rich and creamy chicken curry</p>
+              <p><strong>Description:</strong> Rich and creamy Paneer curry</p>
               <p><strong>Ingredients:</strong> Paneer, Tomato, Cream, Spices</p>
               <p><strong>Average Calorie:</strong> 550 kcal</p>
               <p><strong>Ideal For:</strong> 2 people</p>
@@ -240,7 +230,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Samosa" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Samosa" class="menu-img img-fluid" alt="Samosa"></a>
+              <a href="assets/img/menu/Samosa.jpg" class="glightbox"><img src="assets/img/menu/Samosa.jpg" class="menu-img img-fluid" alt="Samosa"></a>
               <div class="menu-content">
                 <h4>Samosa <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Potatoes, Peas, Spices, Flour (Spicy)</p>
@@ -259,7 +249,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-breakfast filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Medu+Vada" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Medu+Vada" class="menu-img img-fluid" alt="Medu Vada"></a>
+              <a href="assets/img/menu/Medu Vada.jpg" class="glightbox"><img src="assets/img/menu/Medu Vada.jpg" class="menu-img img-fluid" alt="Medu Vada"></a>
               <div class="menu-content">
                 <h4>Medu Vada <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Black Lentils, Spices (Mild)</p>
@@ -278,7 +268,7 @@
 
           <div class="col-lg-4 menu-item filter-nonveg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Tandoori+Chicken" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Tandoori+Chicken" class="menu-img img-fluid" alt="Tandoori Chicken"></a>
+              <a href="assets/img/menu/Tandoori Chicken.jpg" class="glightbox"><img src="assets/img/menu/Tandoori Chicken.jpg" class="menu-img img-fluid" alt="Tandoori Chicken"></a>
               <div class="menu-content">
                 <h4>Tandoori Chicken <span class="badge bg-danger ms-2">Non-Veg</span></h4>
                 <p class="ingredients">Chicken, Yogurt, Spices (Spicy)</p>
@@ -297,7 +287,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Dahi+Bhalla" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Dahi+Bhalla" class="menu-img img-fluid" alt="Dahi Bhalla"></a>
+              <a href="assets/img/menu/Dahi Bhalla.jpg" class="glightbox"><img src="assets/img/menu/Dahi Bhalla.jpg" class="menu-img img-fluid" alt="Dahi Bhalla"></a>
               <div class="menu-content">
                 <h4>Dahi Bhalla <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Lentil Dumplings, Yogurt, Chutneys, Spices (Sweet, Sour)</p>
@@ -316,7 +306,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Papri+Chaat" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Papri+Chaat" class="menu-img img-fluid" alt="Papri Chaat"></a>
+              <a href="assets/img/menu/Papri Chaat.jpg" class="glightbox"><img src="assets/img/menu/Papri Chaat.jpg" class="menu-img img-fluid" alt="Papri Chaat"></a>
               <div class="menu-content">
                 <h4>Papri Chaat <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Crispy Wafers, Potatoes, Chickpeas, Chutneys, Yogurt (Spicy, Tangy)</p>
@@ -335,7 +325,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Bhelpuri" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Bhelpuri" class="menu-img img-fluid" alt="Bhelpuri"></a>
+              <a href="assets/img/menu/Bhelpuri.jpg" class="glightbox"><img src="assets/img/menu/Bhelpuri.jpg" class="menu-img img-fluid" alt="Bhelpuri"></a>
               <div class="menu-content">
                 <h4>Bhelpuri <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Puffed Rice, Vegetables, Chutneys, Spices (Spicy, Tangy)</p>
@@ -354,7 +344,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-lunch filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Rasam" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Rasam" class="menu-img img-fluid" alt="Rasam"></a>
+              <a href="assets/img/menu/Rasam.jpg" class="glightbox"><img src="assets/img/menu/Rasam.jpg" class="menu-img img-fluid" alt="Rasam"></a>
               <div class="menu-content">
                 <h4>Rasam <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Tamarind, Tomatoes, Spices (Spicy)</p>
@@ -374,7 +364,7 @@
           <!-- BREAKFAST -->
           <div class="col-lg-4 menu-item filter-veg filter-breakfast filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Masala+Dosa" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Masala+Dosa" class="menu-img img-fluid" alt="Masala Dosa"></a>
+              <a href="assets/img/menu/Masala Dosa.jpg" class="glightbox"><img src="assets/img/menu/Masala Dosa.jpg" class="menu-img img-fluid" alt="Masala Dosa"></a>
               <div class="menu-content">
                 <h4>Masala Dosa <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Rice Batter, Potatoes, Onions, Spices (Spicy)</p>
@@ -393,7 +383,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-breakfast filter-lunch">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Chole+Bhature" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Chole+Bhature" class="menu-img img-fluid" alt="Chole Bhature"></a>
+              <a href="assets/img/menu/Chole Bhature.jpg" class="glightbox"><img src="assets/img/menu/Chole Bhature.jpg" class="menu-img img-fluid" alt="Chole Bhature"></a>
               <div class="menu-content">
                 <h4>Chole Bhature <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Chickpeas, Flour, Spices (Spicy)</p>
@@ -412,7 +402,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-breakfast">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Idli+Sambar" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Idli+Sambar" class="menu-img img-fluid" alt="Idli Sambar"></a>
+              <a href="assets/img/menu/Idli Sambar.jpg" class="glightbox"><img src="assets/img/menu/Idli Sambar.jpg" class="menu-img img-fluid" alt="Idli Sambar"></a>
               <div class="menu-content">
                 <h4>Idli Sambar <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Rice Batter, Lentils, Vegetables, Spices (Mild)</p>
@@ -431,7 +421,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-breakfast filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Uttapam" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Uttapam" class="menu-img img-fluid" alt="Uttapam"></a>
+              <a href="assets/img/menu/Uttapam.jpg" class="glightbox"><img src="assets/img/menu/Uttapam.jpg" class="menu-img img-fluid" alt="Uttapam"></a>
               <div class="menu-content">
                 <h4>Uttapam <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Rice Batter, Onions, Tomatoes, Spices (Mild)</p>
@@ -450,7 +440,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-breakfast filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Poha" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Poha" class="menu-img img-fluid" alt="Poha"></a>
+              <a href="assets/img/menu/Poha.jpg" class="glightbox"><img src="assets/img/menu/Poha.jpg" class="menu-img img-fluid" alt="Poha"></a>
               <div class="menu-content">
                 <h4>Poha <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Flattened Rice, Onions, Peanuts, Spices (Mild)</p>
@@ -469,7 +459,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-breakfast filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Upma" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Upma" class="menu-img img-fluid" alt="Upma"></a>
+              <a href="assets/img/menu/Upma.jpg" class="glightbox"><img src="assets/img/menu/Upma.jpg" class="menu-img img-fluid" alt="Upma"></a>
               <div class="menu-content">
                 <h4>Upma <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Semolina, Vegetables, Spices (Mild)</p>
@@ -488,7 +478,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-breakfast filter-lunch">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Paratha" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Paratha" class="menu-img img-fluid" alt="Paratha"></a>
+              <a href="assets/img/menu/Paratha.jpg" class="glightbox"><img src="assets/img/menu/Paratha.jpg" class="menu-img img-fluid" alt="Paratha"></a>
               <div class="menu-content">
                 <h4>Paratha <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Whole Wheat Flour, Ghee (Mild)</p>
@@ -507,7 +497,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-breakfast filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Appam" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Appam" class="menu-img img-fluid" alt="Appam"></a>
+              <a href="assets/img/menu/Appam.jpg" class="glightbox"><img src="assets/img/menu/Appam.jpg" class="menu-img img-fluid" alt="Appam"></a>
               <div class="menu-content">
                 <h4>Appam <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Rice Batter, Coconut Milk (Mild)</p>
@@ -527,7 +517,7 @@
           <!-- LUNCH -->
           <div class="col-lg-4 menu-item filter-nonveg filter-lunch filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Chicken+Biryani" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Chicken+Biryani" class="menu-img img-fluid" alt="Chicken Biryani"></a>
+              <a href="assets/img/menu/Chicken Biryani.jpg" class="glightbox"><img src="assets/img/menu/Chicken Biryani.jpg" class="menu-img img-fluid" alt="Chicken Biryani"></a>
               <div class="menu-content">
                 <h4>Chicken Biryani <span class="badge bg-danger ms-2">Non-Veg</span></h4>
                 <p class="ingredients">Chicken, Basmati Rice, Spices, Yogurt (Spicy)</p>
@@ -546,7 +536,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-lunch filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Vegetable+Biryani" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Vegetable+Biryani" class="menu-img img-fluid" alt="Vegetable Biryani"></a>
+              <a href="assets/img/menu/Vegetable Biryani.jpg" class="glightbox"><img src="assets/img/menu/Vegetable Biryani.jpg" class="menu-img img-fluid" alt="Vegetable Biryani"></a>
               <div class="menu-content">
                 <h4>Vegetable Biryani <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Mixed Vegetables, Basmati Rice, Spices, Yogurt (Mild)</p>
@@ -565,7 +555,7 @@
 
           <div class="col-lg-4 menu-item filter-nonveg filter-veg filter-lunch filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Kathi+Roll" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Kathi+Roll" class="menu-img img-fluid" alt="Kathi Roll"></a>
+              <a href="assets/img/menu/Kathi Roll.jpg" class="glightbox"><img src="assets/img/menu/Kathi Roll.jpg" class="menu-img img-fluid" alt="Kathi Roll"></a>
               <div class="menu-content">
                 <h4>Kathi Roll <span class="badge bg-secondary ms-2">Veg/Non-Veg</span></h4>
                 <p class="ingredients">Chicken/Paneer, Flour, Vegetables, Spices (Spicy)</p>
@@ -584,7 +574,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-lunch filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Rajma+Chawal" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Rajma+Chawal" class="menu-img img-fluid" alt="Rajma Chawal"></a>
+              <a href="assets/img/menu/Rajma Chawal.jpg" class="glightbox"><img src="assets/img/menu/Rajma Chawal.jpg" class="menu-img img-fluid" alt="Rajma Chawal"></a>
               <div class="menu-content">
                 <h4>Rajma Chawal <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Kidney Beans, Rice, Spices (Mild)</p>
@@ -603,7 +593,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-lunch filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Bisi+Bele+Bath" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Bisi+Bele+Bath" class="menu-img img-fluid" alt="Bisi Bele Bath"></a>
+              <a href="assets/img/menu/Bisi Bele Bath.jpg" class="glightbox"><img src="assets/img/menu/Bisi Bele Bath.jpg" class="menu-img img-fluid" alt="Bisi Bele Bath"></a>
               <div class="menu-content">
                 <h4>Bisi Bele Bath <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Rice, Lentils, Vegetables, Tamarind, Spices (Spicy)</p>
@@ -622,7 +612,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-lunch filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Pav+Bhaji" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Pav+Bhaji" class="menu-img img-fluid" alt="Pav Bhaji"></a>
+              <a href="assets/img/menu/Pav Bhaji.jpg" class="glightbox"><img src="assets/img/menu/Pav Bhaji.jpg" class="menu-img img-fluid" alt="Pav Bhaji"></a>
               <div class="menu-content">
                 <h4>Pav Bhaji <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Mixed Vegetables, Potatoes, Butter, Spices, Bread (Spicy)</p>
@@ -641,7 +631,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-lunch filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Sambhar" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Sambhar" class="menu-img img-fluid" alt="Sambhar"></a>
+              <a href="assets/img/menu/Sambhar.jpg" class="glightbox"><img src="assets/img/menu/Sambhar.jpg" class="menu-img img-fluid" alt="Sambhar"></a>
               <div class="menu-content">
                 <h4>Sambhar <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Lentils, Vegetables, Tamarind, Spices (Mild)</p>
@@ -660,7 +650,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-lunch filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Aloo+Gobi" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Aloo+Gobi" class="menu-img img-fluid" alt="Aloo Gobi"></a>
+              <a href="assets/img/menu/Aloo Gobi.jpg" class="glightbox"><img src="assets/img/menu/Aloo Gobi.jpg" class="menu-img img-fluid" alt="Aloo Gobi"></a>
               <div class="menu-content">
                 <h4>Aloo Gobi <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Potatoes, Cauliflower, Spices (Mild)</p>
@@ -679,7 +669,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-lunch filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Makki+di+Roti" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Makki+di+Roti" class="menu-img img-fluid" alt="Makki di Roti"></a>
+              <a href="assets/img/menu/Makki di Roti.jpg" class="glightbox"><img src="assets/img/menu/Makki di Roti.jpg" class="menu-img img-fluid" alt="Makki di Roti"></a>
               <div class="menu-content">
                 <h4>Makki di Roti <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Corn Flour (Mild)</p>
@@ -699,7 +689,7 @@
           <!-- DINNER -->
           <div class="col-lg-4 menu-item filter-nonveg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Butter+Chicken" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Butter+Chicken" class="menu-img img-fluid" alt="Butter Chicken"></a>
+              <a href="assets/img/menu/Butter Chicken.jpg" class="glightbox"><img src="assets/img/menu/Butter Chicken.jpg" class="menu-img img-fluid" alt="Butter Chicken"></a>
               <div class="menu-content">
                 <h4>Butter Chicken <span class="badge bg-danger ms-2">Non-Veg</span></h4>
                 <p class="ingredients">Chicken, Tomato, Cream, Spices (Mild)</p>
@@ -718,7 +708,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Paneer+Butter+Masala" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Paneer+Butter+Masala" class="menu-img img-fluid" alt="Paneer Butter Masala"></a>
+              <a href="assets/img/menu/Paneer Butter Masala.jpg" class="glightbox"><img src="assets/img/menu/Paneer Butter Masala.jpg" class="menu-img img-fluid" alt="Paneer Butter Masala"></a>
               <div class="menu-content">
                 <h4>Paneer Butter Masala <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Paneer, Tomato, Cream, Spices (Mild)</p>
@@ -737,7 +727,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Dal+Makhani" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Dal+Makhani" class="menu-img img-fluid" alt="Dal Makhani"></a>
+              <a href="assets/img/menu/Dal Makhani.jpg" class="glightbox"><img src="assets/img/menu/Dal Makhani.jpg" class="menu-img img-fluid" alt="Dal Makhani"></a>
               <div class="menu-content">
                 <h4>Dal Makhani <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Black Lentils, Kidney Beans, Cream, Butter, Spices (Mild)</p>
@@ -756,7 +746,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Palak+Paneer" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Palak+Paneer" class="menu-img img-fluid" alt="Palak Paneer"></a>
+              <a href="assets/img/menu/Palak Paneer.jpg" class="glightbox"><img src="assets/img/menu/Palak Paneer.jpg" class="menu-img img-fluid" alt="Palak Paneer"></a>
               <div class="menu-content">
                 <h4>Palak Paneer <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Paneer, Spinach, Spices (Mild)</p>
@@ -775,7 +765,7 @@
 
           <div class="col-lg-4 menu-item filter-nonveg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Rogan+Josh" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Rogan+Josh" class="menu-img img-fluid" alt="Rogan Josh"></a>
+              <a href="assets/img/menu/Rogan Josh.jpg" class="glightbox"><img src="assets/img/menu/Rogan Josh.jpg" class="menu-img img-fluid" alt="Rogan Josh"></a>
               <div class="menu-content">
                 <h4>Rogan Josh <span class="badge bg-danger ms-2">Non-Veg</span></h4>
                 <p class="ingredients">Lamb, Yogurt, Spices (Spicy)</p>
@@ -794,7 +784,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Malai+Kofta" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Malai+Kofta" class="menu-img img-fluid" alt="Malai Kofta"></a>
+              <a href="assets/img/menu/Malai Kofta.jpg" class="glightbox"><img src="assets/img/menu/Malai Kofta.jpg" class="menu-img img-fluid" alt="Malai Kofta"></a>
               <div class="menu-content">
                 <h4>Malai Kofta <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Paneer, Potatoes, Cream, Cashews (Sweet)</p>
@@ -813,7 +803,7 @@
 
           <div class="col-lg-4 menu-item filter-nonveg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Fish+Curry" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Fish+Curry" class="menu-img img-fluid" alt="Fish Curry"></a>
+              <a href="assets/img/menu/Fish Curry.jpg" class="glightbox"><img src="assets/img/menu/Fish Curry.jpg" class="menu-img img-fluid" alt="Fish Curry"></a>
               <div class="menu-content">
                 <h4>Fish Curry <span class="badge bg-danger ms-2">Non-Veg</span></h4>
                 <p class="ingredients">Fish, Coconut Milk, Tamarind, Spices (Spicy)</p>
@@ -832,7 +822,7 @@
 
           <div class="col-lg-4 menu-item filter-nonveg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Chicken+Chettinad" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Chicken+Chettinad" class="menu-img img-fluid" alt="Chicken Chettinad"></a>
+              <a href="assets/img/menu/Chicken Chettinad.jpg" class="glightbox"><img src="assets/img/menu/Chicken Chettinad.jpg" class="menu-img img-fluid" alt="Chicken Chettinad"></a>
               <div class="menu-content">
                 <h4>Chicken Chettinad <span class="badge bg-danger ms-2">Non-Veg</span></h4>
                 <p class="ingredients">Chicken, Black Pepper, Fennel, Spices (Spicy)</p>
@@ -851,7 +841,7 @@
 
           <div class="col-lg-4 menu-item filter-nonveg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Mutton+Rogan+Josh" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Mutton+Rogan+Josh" class="menu-img img-fluid" alt="Mutton Rogan Josh"></a>
+              <a href="assets/img/menu/Mutton Rogan Josh.jpg" class="glightbox"><img src="assets/img/menu/Mutton Rogan Josh.jpg" class="menu-img img-fluid" alt="Mutton Rogan Josh"></a>
               <div class="menu-content">
                 <h4>Mutton Rogan Josh <span class="badge bg-danger ms-2">Non-Veg</span></h4>
                 <p class="ingredients">Mutton, Yogurt, Spices (Spicy)</p>
@@ -870,7 +860,7 @@
 
           <div class="col-lg-4 menu-item filter-nonveg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Goan+Fish+Curry" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Goan+Fish+Curry" class="menu-img img-fluid" alt="Goan Fish Curry"></a>
+              <a href="assets/img/menu/Goan Fish Curry.jpg" class="glightbox"><img src="assets/img/menu/Goan Fish Curry.jpg" class="menu-img img-fluid" alt="Goan Fish Curry"></a>
               <div class="menu-content">
                 <h4>Goan Fish Curry <span class="badge bg-danger ms-2">Non-Veg</span></h4>
                 <p class="ingredients">Fish, Coconut, Red Chillies, Tamarind (Spicy)</p>
@@ -889,7 +879,7 @@
 
           <div class="col-lg-4 menu-item filter-nonveg filter-lunch filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Hyderabadi+Biryani" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Hyderabadi+Biryani" class="menu-img img-fluid" alt="Hyderabadi Biryani"></a>
+              <a href="assets/img/menu/Hyderabadi Biryani.jpg" class="glightbox"><img src="assets/img/menu/Hyderabadi Biryani.jpg" class="menu-img img-fluid" alt="Hyderabadi Biryani"></a>
               <div class="menu-content">
                 <h4>Hyderabadi Biryani <span class="badge bg-danger ms-2">Non-Veg</span></h4>
                 <p class="ingredients">Chicken/Mutton, Basmati Rice, Saffron, Spices (Spicy)</p>
@@ -908,7 +898,7 @@
 
           <div class="col-lg-4 menu-item filter-nonveg filter-veg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Kofta+Curry" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Kofta+Curry" class="menu-img img-fluid" alt="Kofta Curry"></a>
+              <a href="assets/img/menu/Kofta Curry.jpg" class="glightbox"><img src="assets/img/menu/Kofta Curry.jpg" class="menu-img img-fluid" alt="Kofta Curry"></a>
               <div class="menu-content">
                 <h4>Kofta Curry <span class="badge bg-secondary ms-2">Veg/Non-Veg</span></h4>
                 <p class="ingredients">Mixed Vegetables/Meat, Spices, Cream (Mild)</p>
@@ -927,7 +917,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Shahi+Paneer" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Shahi+Paneer" class="menu-img img-fluid" alt="Shahi Paneer"></a>
+              <a href="assets/img/menu/Shahi Paneer.jpg" class="glightbox"><img src="assets/img/menu/Shahi Paneer.jpg" class="menu-img img-fluid" alt="Shahi Paneer"></a>
               <div class="menu-content">
                 <h4>Shahi Paneer <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Paneer, Cream, Cashews, Spices (Sweet)</p>
@@ -946,7 +936,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Sarson+Ka+Saag" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Sarson+Ka+Saag" class="menu-img img-fluid" alt="Sarson Ka Saag"></a>
+              <a href="assets/img/menu/Sarson Ka Saag.jpg" class="glightbox"><img src="assets/img/menu/Sarson Ka Saag.jpg" class="menu-img img-fluid" alt="Sarson Ka Saag"></a>
               <div class="menu-content">
                 <h4>Sarson Ka Saag <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Mustard Greens, Spinach, Spices, Butter (Mild)</p>
@@ -965,7 +955,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Mutter+Paneer" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Mutter+Paneer" class="menu-img img-fluid" alt="Mutter Paneer"></a>
+              <a href="assets/img/menu/Mutter Paneer.jpg" class="glightbox"><img src="assets/img/menu/Mutter Paneer.jpg" class="menu-img img-fluid" alt="Mutter Paneer"></a>
               <div class="menu-content">
                 <h4>Mutter Paneer <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Paneer, Peas, Tomato, Spices (Mild)</p>
@@ -984,7 +974,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Chapati/Roti" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Chapati/Roti" class="menu-img img-fluid" alt="Chapati/Roti"></a>
+              <a href="assets/img/menu/Chapati Roti.jpg" class="glightbox"><img src="assets/img/menu/Chapati Roti.jpg" class="menu-img img-fluid" alt="Chapati/Roti"></a>
               <div class="menu-content">
                 <h4>Chapati/Roti <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Whole Wheat Flour (Mild)</p>
@@ -1003,7 +993,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-dinner">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Naan" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Naan" class="menu-img img-fluid" alt="Naan"></a>
+              <a href="assets/img/menu/Naan.jpg" class="glightbox"><img src="assets/img/menu/Naan.jpg" class="menu-img img-fluid" alt="Naan"></a>
               <div class="menu-content">
                 <h4>Naan <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Refined Flour, Yeast (Mild)</p>
@@ -1023,7 +1013,7 @@
           <!-- SNACKS -->
           <div class="col-lg-4 menu-item filter-veg filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Pani+Puri" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Pani+Puri" class="menu-img img-fluid" alt="Pani Puri"></a>
+              <a href="assets/img/menu/Pani Puri.jpg" class="glightbox"><img src="assets/img/menu/Pani Puri.jpg" class="menu-img img-fluid" alt="Pani Puri"></a>
               <div class="menu-content">
                 <h4>Pani Puri <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Puri, Potatoes, Chickpeas, Spiced Water (Spicy)</p>
@@ -1042,7 +1032,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Vada+Pav" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Vada+Pav" class="menu-img img-fluid" alt="Vada Pav"></a>
+              <a href="assets/img/menu/Vada Pav.jpg" class="glightbox"><img src="assets/img/menu/Vada Pav.jpg" class="menu-img img-fluid" alt="Vada Pav"></a>
               <div class="menu-content">
                 <h4>Vada Pav <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Potatoes, Chickpea Flour, Bread, Spices (Spicy)</p>
@@ -1061,7 +1051,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Dhokla" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Dhokla" class="menu-img img-fluid" alt="Dhokla"></a>
+              <a href="assets/img/menu/Dhokla.jpg" class="glightbox"><img src="assets/img/menu/Dhokla.jpg" class="menu-img img-fluid" alt="Dhokla"></a>
               <div class="menu-content">
                 <h4>Dhokla <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Gram Flour, Semolina, Spices (Mild)</p>
@@ -1080,7 +1070,7 @@
 
           <div class="col-lg-4 menu-item filter-veg filter-snacks">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Lassi" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Lassi" class="menu-img img-fluid" alt="Lassi"></a>
+              <a href="assets/img/menu/Lassi.jpg" class="glightbox"><img src="assets/img/menu/Lassi.jpg" class="menu-img img-fluid" alt="Lassi"></a>
               <div class="menu-content">
                 <h4>Lassi <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Yogurt, Sugar/Salt, Water (Sweet)</p>
@@ -1100,7 +1090,7 @@
           <!-- DESSERTS -->
           <div class="col-lg-4 menu-item filter-deserts filter-veg">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Gulab+Jamun" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Gulab+Jamun" class="menu-img img-fluid" alt="Gulab Jamun"></a>
+              <a href="assets/img/menu/Gulab Jamun.jpg" class="glightbox"><img src="assets/img/menu/Gulab Jamun.jpg" class="menu-img img-fluid" alt="Gulab Jamun"></a>
               <div class="menu-content">
                 <h4>Gulab Jamun <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Milk Solids, Sugar Syrup, Cardamom (Sweet)</p>
@@ -1119,7 +1109,7 @@
 
           <div class="col-lg-4 menu-item filter-deserts filter-veg">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Jalebi" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Jalebi" class="menu-img img-fluid" alt="Jalebi"></a>
+              <a href="assets/img/menu/Jalebi.jpg" class="glightbox"><img src="assets/img/menu/Jalebi.jpg" class="menu-img img-fluid" alt="Jalebi"></a>
               <div class="menu-content">
                 <h4>Jalebi <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Flour, Sugar Syrup, Saffron (Sweet)</p>
@@ -1138,7 +1128,7 @@
 
           <div class="col-lg-4 menu-item filter-deserts filter-veg">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Gajar+Halwa" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Gajar+Halwa" class="menu-img img-fluid" alt="Gajar Halwa"></a>
+              <a href="assets/img/menu/Gajar Halwa.jpg" class="glightbox"><img src="assets/img/menu/Gajar Halwa.jpg" class="menu-img img-fluid" alt="Gajar Halwa"></a>
               <div class="menu-content">
                 <h4>Gajar Halwa <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Carrots, Milk, Sugar, Ghee, Nuts (Sweet)</p>
@@ -1157,7 +1147,7 @@
 
           <div class="col-lg-4 menu-item filter-deserts filter-veg">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Kulfi" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Kulfi" class="menu-img img-fluid" alt="Kulfi"></a>
+              <a href="assets/img/menu/Kulfi.jpg" class="glightbox"><img src="assets/img/menu/Kulfi.jpg" class="menu-img img-fluid" alt="Kulfi"></a>
               <div class="menu-content">
                 <h4>Kulfi <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Milk, Sugar, Cardamom, Nuts (Sweet)</p>
@@ -1176,7 +1166,7 @@
 
           <div class="col-lg-4 menu-item filter-deserts filter-veg">
             <div class="menu-main-info">
-              <a href="https://placehold.co/400x300/CCCCCC/000000?text=Kheer" class="glightbox"><img src="https://placehold.co/400x300/CCCCCC/000000?text=Kheer" class="menu-img img-fluid" alt="Kheer"></a>
+              <a href="assets/img/menu/Kheer.jpg" class="glightbox"><img src="assets/img/menu/Kheer.jpg" class="menu-img img-fluid" alt="Kheer"></a>
               <div class="menu-content">
                 <h4>Kheer <span class="badge bg-success ms-2">Veg</span></h4>
                 <p class="ingredients">Rice, Milk, Sugar, Nuts, Cardamom (Sweet)</p>
@@ -1239,7 +1229,7 @@
                     <p>Ingredients: Basmati Rice, choice of Chicken/Mutton/Paneer, Saffron, Cardamom, Cloves, Cinnamon, Fresh Herbs. Flavour: Rich & Aromatic.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://placehold.co/400x300/CCCCCC/000000?text=Special+Biryani" alt="Chef's Special Biryani" class="img-fluid">
+                    <img src="assets/img/menu/Special Biryani.jpg" alt="Chef's Special Biryani" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -1251,7 +1241,7 @@
                     <p>Includes: Dal Makhani, Shahi Paneer, Butter Chicken (or Veg Curry), Naan, Rice, Raita, Salad, Gulab Jamun. Flavour: Diverse & Balanced.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://placehold.co/400x300/CCCCCC/000000?text=Royal+Thali" alt="Royal Thali" class="img-fluid">
+                    <img src="assets/img/menu/Royal Thali.jpg" alt="Royal Thali" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -1263,7 +1253,7 @@
                     <p>Includes: Tandoori Prawns, Fish Fry, Goan Fish Curry, Lemon wedges, Mint Chutney. Flavour: Tangy & Spicy.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://placehold.co/400x300/CCCCCC/000000?text=Seafood+Platter" alt="Seafood Platter" class="img-fluid">
+                    <img src="assets/img/menu/Seafood Platter.jpg" alt="Seafood Platter" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -1275,7 +1265,7 @@
                     <p>Includes: Aloo Gobi, Chana Masala, Vegetable Biryani, Roti, Salad. Flavour: Wholesome & Mildly Spiced.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://placehold.co/400x300/CCCCCC/000000?text=Vegan+Delights" alt="Vegan Delights" class="img-fluid">
+                    <img src="assets/img/menu/Vegan Delights.jpg" alt="Vegan Delights" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -1287,7 +1277,7 @@
                     <p>Includes: Gulab Jamun, Jalebi, Gajar Halwa, Kulfi, Kheer. Flavour: Sweet & Aromatic.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="https://placehold.co/400x300/CCCCCC/000000?text=Dessert+Extravaganza" alt="Dessert Extravaganza" class="img-fluid">
+                    <img src="assets/img/menu/Dessert Extravaganza.jpg" alt="Dessert Extravaganza" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -1302,14 +1292,11 @@
     <!-- Events Section -->
     <section id="events" class="events section">
 
-      <div class="container-fluid" data-aos="fade-up">
+      <img class="slider-bg" src="assets/img/events-bg.jpg" alt="" data-aos="fade-in">
 
-        <div class="section-title">
-          <h2>Events</h2>
-          <p>Organize Your <span>Events</span> in our Restaurant</p>
-        </div>
+      <div class="container">
 
-        <div class="swiper init-swiper">
+        <div class="swiper init-swiper" data-aos="fade-up" data-aos-delay="100">
           <script type="application/json" class="swiper-config">
             {
               "loop": true,
@@ -1322,10 +1309,6 @@
                 "el": ".swiper-pagination",
                 "type": "bullets",
                 "clickable": true
-              },
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
               }
             }
           </script>
@@ -1334,7 +1317,7 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="https://placehold.co/700x500/CCCCCC/000000?text=Birthday+Party" class="img-fluid" alt="Birthday Party">
+                  <img src="assets/img/events-slider/events-slider-1.jpg" class="img-fluid" alt="Birthday Party">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Birthday Parties</h3>
@@ -1359,7 +1342,7 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="https://placehold.co/700x500/CCCCCC/000000?text=Private+Parties" class="img-fluid" alt="Private Parties">
+                  <img src="assets/img/events-slider/events-slider-2.jpg" class="img-fluid" alt="Private Parties">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Private Parties</h3>
@@ -1384,7 +1367,7 @@
             <div class="swiper-slide">
               <div class="row event-item">
                 <div class="col-lg-6">
-                  <img src="https://placehold.co/700x500/CCCCCC/000000?text=Custom+Events" class="img-fluid" alt="Custom Events">
+                  <img src="assets/img/events-slider/events-slider-3.jpg" class="img-fluid" alt="Custom Events">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 content">
                   <h3>Custom Events</h3>
@@ -1413,6 +1396,78 @@
       </div>
 
     </section><!-- /Events Section -->
+
+    <section id="chefs" class="chefs section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Necessitatibus eius consequatur</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/chefs/chefs-1.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Master Chef</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/chefs/chefs-2.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Patissier</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/chefs/chefs-3.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>Cook</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Chefs Section -->
 
     <!-- Book A Table Section -->
     <section id="book-a-table" class="book-a-table section">
@@ -1470,12 +1525,11 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery section">
 
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Gallery</h2>
-          <p>Some photos from <span>Our Restaurant</span></p>
-        </div>
-      </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+        <p>Some photos from Our Restaurant</p>
+      </div><!-- End Section Title -->
 
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
 
@@ -1483,64 +1537,64 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+1" class="glightbox" data-gall="gallery-item">
-                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+1" alt="Gallery image 1" class="img-fluid">
+              <a href="assets/img/gallery/gallery-1.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+2" class="glightbox" data-gall="gallery-item">
-                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+2" alt="Gallery image 2" class="img-fluid">
+              <a href="assets/img/gallery/gallery-2.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+3" class="glightbox" data-gall="gallery-item">
-                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+3" alt="Gallery image 3" class="img-fluid">
+              <a href="assets/img/gallery/gallery-3.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+4" class="glightbox" data-gall="gallery-item">
-                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+4" alt="Gallery image 4" class="img-fluid">
+              <a href="assets/img/gallery/gallery-4.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+5" class="glightbox" data-gall="gallery-item">
-                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+5" alt="Gallery image 5" class="img-fluid">
+              <a href="assets/img/gallery/gallery-5.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+6" class="glightbox" data-gall="gallery-item">
-                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+6" alt="Gallery image 6" class="img-fluid">
+              <a href="assets/img/gallery/gallery-6.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+7" class="glightbox" data-gall="gallery-item">
-                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+7" alt="Gallery image 7" class="img-fluid">
+              <a href="assets/img/gallery/gallery-7.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+8" class="glightbox" data-gall="gallery-item">
-                <img src="https://placehold.co/800x600/CCCCCC/000000?text=Gallery+8" alt="Gallery image 8" class="img-fluid">
+              <a href="assets/img/gallery/gallery-8.jpg" class="glightbox" data-gallery="images-gallery">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div><!-- End Gallery Item -->
@@ -1559,58 +1613,7 @@
         <div class="section-title">
           <h2>Contact</h2>
           <p>Contact Us</p>
-        </div>
-
-        <div class="mb-3">
-          <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smz!2smy!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-        </div><!-- End Google Maps -->
-
-        <div class="row gy-4">
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center">
-              <i class="icon bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Our Address</h3>
-                <p>123 Food Street, Mumbai, India</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center">
-              <i class="icon bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+91 999999999</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center">
-              <i class="icon bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>contact@example.com</p>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-          <div class="col-md-6">
-            <div class="info-item d-flex align-items-center">
-              <i class="icon bi bi-clock flex-shrink-0"></i>
-              <div>
-                <h3>Opening Hours</h3>
-                <div>
-                  <strong>Mon-Sat:</strong> 11AM - 11PM<br>
-                  <strong>Sunday:</strong> Closed
-                </div>
-              </div>
-            </div>
-          </div><!-- End Info Item -->
-
-        </div>
+        </div>  
 
         <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
           <div class="row">
@@ -1645,8 +1648,8 @@
 
     <div class="container">
       <div class="row gy-3">
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
+        <div class="col-lg-3 col-md-6 d-flex align-items-start mb-4">
+          <i class="bi bi-share icon me-3 fs-4 text-white"></i>
           <div class="info">
             <h4>Address:</h4>
             <p>
@@ -1656,8 +1659,8 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-telephone icon"></i>
+        <div class="col-lg-3 col-md-6 d-flex align-items-start mb-4">
+          <i class="bi bi-share icon me-3 fs-4 text-white"></i>
           <div class="info">
             <h4>Reservations:</h4>
             <p>
@@ -1667,19 +1670,19 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-clock icon"></i>
+        <div class="col-lg-3 col-md-6 d-flex align-items-start mb-4">
+          <i class="bi bi-clock icon me-3 fs-4 text-white"></i>
           <div class="info">
             <h4>Opening Hours:</h4>
-            <p>
+            <p class="mb-0">
               <strong>Mon-Sat:</strong> 11AM - 11PM<br>
-              <strong>Sunday:</strong> Closed
+              <strong>Sunday:</strong> Open
             </p>
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-share icon"></i>
+        <div class="col-lg-3 col-md-6 d-flex align-items-start mb-4">
+          <i class="bi bi-share icon me-3 fs-4 text-white"></i>
           <div class="info">
             <h4>Follow Us</h4>
             <div class="social-links mt-3">
@@ -1690,17 +1693,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="container copyright text-center">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Restaurantly</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 
