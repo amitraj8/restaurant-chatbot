@@ -1,0 +1,158 @@
+/* Chatbot Container */
+#chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px; /* Fixed width for the chat window */
+    height: 450px; /* Fixed height for the chat window */
+    background-color: var(--surface-color); /* Uses your defined surface color */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000; /* Ensure it's above other content */
+    border: 1px solid var(--accent-color); /* Accent border */
+    font-family: var(--default-font); /* Use your defined font */
+}
+
+/* Chatbot Header */
+#chatbot-header {
+    background-color: var(--accent-color);
+    color: var(--contrast-color); /* Text color for header */
+    padding: 15px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+#chatbot-header .close-btn {
+    background: none;
+    border: none;
+    color: var(--contrast-color);
+    font-size: 1.5em;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 5px;
+}
+
+/* Chat Messages Area */
+#chat-messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: color-mix(in srgb, var(--background-color), transparent 20%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Individual Message Styling */
+.message {
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 80%;
+    word-wrap: break-word;
+    font-size: 0.95em;
+}
+
+.user-message {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    align-self: flex-end;
+    border-bottom-right-radius: 5px;
+}
+
+.bot-message {
+    background-color: var(--background-color);
+    color: var(--default-color);
+    align-self: flex-start;
+    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+    border-bottom-left-radius: 5px;
+}
+
+/* Chat Input Area */
+#chat-input-area {
+    display: flex;
+    padding: 10px 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--surface-color);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid color-mix(in srgb, var(--accent-color), transparent 70%);
+    border-radius: 8px;
+    background-color: var(--background-color);
+    color: var(--default-color);
+    outline: none;
+    margin-right: 10px;
+    font-size: 0.95em;
+}
+
+#send-button {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+#send-button:hover {
+    background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+/* Floating Chat Button */
+#chat-toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001; /* Above the chatbot container */
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+#chat-toggle-button:hover {
+    transform: scale(1.05);
+    background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #chatbot-container {
+        width: 90vw; /* Wider on smaller screens */
+        height: 70vh; /* Taller on smaller screens */
+        bottom: 10px;
+        right: 10px;
+    }
+
+    #chat-toggle-button {
+        bottom: 10px;
+        right: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.8em;
+    }
+}
