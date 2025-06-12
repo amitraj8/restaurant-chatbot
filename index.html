@@ -25,7 +25,9 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
-  <link href="assets/main.css" rel="stylesheet">
+  <link href="assets/main.css" rel="stylesheet">  
+  <!-- Chatbot CSS -->
+  <link href="assets/chatbot.css" rel="stylesheet">
 
 </head>
 
@@ -1698,6 +1700,27 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- Floating Chat Toggle Button -->
+  <button id="chat-toggle-button" aria-label="Open Chatbot">
+      <i class="bi bi-chat-dots-fill"></i>
+  </button>
+
+  <!-- Chatbot Container -->
+  <div id="chatbot-container">
+      <div id="chatbot-header">
+          Indian Flavours Chatbot
+          <button id="close-chat-button" aria-label="Close Chatbot">&times;</button>
+      </div>
+      <div id="chat-messages">
+          <!-- Chat messages will be appended here by JavaScript -->
+          <div class="message bot-message">Hello! How can I help you with your Indian Flavours dining experience today?</div>
+      </div>
+      <div id="chat-input-area">
+          <textarea id="user-input" placeholder="Type your message..." rows="1"></textarea>
+          <button id="send-button">Send</button>
+      </div>
+  </div>
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
@@ -1709,7 +1732,8 @@
 
   <!-- Main JS File -->
   <script src="assets/main.js"></script>
+  <!-- Chatbot JS -->
+  <script src="assets/chatbot.js"></script>
 
 </body>
-
 </html>
