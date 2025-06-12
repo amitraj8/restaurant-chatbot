@@ -1,0 +1,56 @@
+id,menu/Name,ingredients,"types(veg, nonveg)",price,description,"ideal for (1, 2, 3..people)",Average calorie,preparation time,"flavour(spicy, sweet)","complementary(drinks, salad, etc)",meal type,inventory
+1,Idli Sambar,"rice, urad dal, tamarind, vegetables",veg,103,Steamed rice cakes served with tangy sambar,3,228,25,spicy,coconut chutney,breakfast,3
+2,Butter Naan,"wheat flour, butter, yeast, milk",veg,58,Soft Indian flatbread brushed with butter,3,130,10,plain,"paneer, dal",lunch,9
+3,Dal Makhani,"urad dal, rajma, butter, cream, spices",veg,171,Creamy slow-cooked lentils with spices,2,311,40,spicy,"naan, rice",dinner,2
+4,Chicken Biryani,"chicken, basmati rice, spices, yogurt, onions",nonveg,270,Fragrant rice dish cooked with spiced chicken and herbs,3,420,41,spicy,"raita, salad",dinner,3
+5,Butter Naan,"wheat flour, butter, yeast, milk",veg,42,Soft Indian flatbread brushed with butter,3,133,12,plain,"paneer, dal",lunch,3
+6,Chicken Biryani,"chicken, basmati rice, spices, yogurt, onions",nonveg,287,Fragrant rice dish cooked with spiced chicken and herbs,3,453,47,spicy,"raita, salad",dinner,8
+7,Aloo Paratha,"wheat flour, potato, spices, ghee",veg,95,Flatbread stuffed with spiced mashed potatoes,1,325,15,spicy,"curd, pickle",breakfast,8
+8,Chicken Biryani,"chicken, basmati rice, spices, yogurt, onions",nonveg,272,Fragrant rice dish cooked with spiced chicken and herbs,1,429,46,spicy,"raita, salad",dinner,2
+9,Rogan Josh,"lamb, yogurt, onions, spices",nonveg,300,Slow-cooked lamb curry from Kashmir,3,508,60,spicy,"naan, salad",dinner,10
+10,Butter Naan,"wheat flour, butter, yeast, milk",veg,40,Soft Indian flatbread brushed with butter,2,143,7,plain,"paneer, dal",lunch,1
+11,Butter Naan,"wheat flour, butter, yeast, milk",veg,44,Soft Indian flatbread brushed with butter,2,140,15,plain,"paneer, dal",lunch,4
+12,Tandoori Chicken,"chicken, yogurt, tandoori masala",nonveg,253,Roasted chicken marinated in yogurt and spices,1,374,43,spicy,"mint chutney, salad",starter,7
+13,Tandoori Chicken,"chicken, yogurt, tandoori masala",nonveg,250,Roasted chicken marinated in yogurt and spices,2,363,37,spicy,"mint chutney, salad",starter,7
+14,Butter Naan,"wheat flour, butter, yeast, milk",veg,55,Soft Indian flatbread brushed with butter,1,144,11,plain,"paneer, dal",lunch,1
+15,Chole Bhature,"chickpeas, flour, spices, onions",veg,156,Spicy chickpeas with deep-fried bread,2,422,38,spicy,"pickle, onion",lunch,6
+16,Chole Bhature,"chickpeas, flour, spices, onions",veg,140,Spicy chickpeas with deep-fried bread,2,408,35,spicy,"pickle, onion",lunch,6
+17,Paneer Butter Masala,"paneer, butter, tomato, cream, spices",veg,211,Rich and creamy paneer curry in butter and tomato base,3,332,33,spicy,"naan, salad",lunch,9
+18,Paneer Butter Masala,"paneer, butter, tomato, cream, spices",veg,220,Rich and creamy paneer curry in butter and tomato base,2,367,29,spicy,"naan, salad",lunch,4
+19,Chicken Biryani,"chicken, basmati rice, spices, yogurt, onions",nonveg,277,Fragrant rice dish cooked with spiced chicken and herbs,1,440,46,spicy,"raita, salad",dinner,6
+20,Rogan Josh,"lamb, yogurt, onions, spices",nonveg,309,Slow-cooked lamb curry from Kashmir,1,480,65,spicy,"naan, salad",dinner,7
+21,Aloo Paratha,"wheat flour, potato, spices, ghee",veg,110,Flatbread stuffed with spiced mashed potatoes,1,300,22,spicy,"curd, pickle",breakfast,9
+22,Rogan Josh,"lamb, yogurt, onions, spices",nonveg,297,Slow-cooked lamb curry from Kashmir,2,501,61,spicy,"naan, salad",dinner,5
+24,Aloo Paratha,"wheat flour, potato, spices, ghee",veg,93,Flatbread stuffed with spiced mashed potatoes,3,323,19,spicy,"curd, pickle",breakfast,1
+25,Masala Dosa,"rice, urad dal, potato, curry leaves, mustard",veg,122,Crispy dosa stuffed with spicy mashed potatoes,3,270,22,spicy,"sambar, chutney",breakfast,6
+26,Butter Naan,"wheat flour, butter, yeast, milk",veg,49,Soft Indian flatbread brushed with butter,2,137,15,plain,"paneer, dal",lunch,4
+28,Idli Sambar,"rice, urad dal, tamarind, vegetables",veg,102,Steamed rice cakes served with tangy sambar,2,218,16,spicy,coconut chutney,breakfast,5
+29,Masala Dosa,"rice, urad dal, potato, curry leaves, mustard",veg,121,Crispy dosa stuffed with spicy mashed potatoes,2,319,21,spicy,"sambar, chutney",breakfast,8
+31,Dal Makhani,"urad dal, rajma, butter, cream, spices",veg,177,Creamy slow-cooked lentils with spices,1,310,45,spicy,"naan, rice",dinner,4
+32,Chicken Biryani,"chicken, basmati rice, spices, yogurt, onions",nonveg,273,Fragrant rice dish cooked with spiced chicken and herbs,1,478,47,spicy,"raita, salad",dinner,7
+34,Aloo Paratha,"wheat flour, potato, spices, ghee",veg,98,Flatbread stuffed with spiced mashed potatoes,3,312,19,spicy,"curd, pickle",breakfast,5
+35,Idli Sambar,"rice, urad dal, tamarind, vegetables",veg,110,Steamed rice cakes served with tangy sambar,3,207,21,spicy,coconut chutney,breakfast,6
+36,Dal Makhani,"urad dal, rajma, butter, cream, spices",veg,178,Creamy slow-cooked lentils with spices,2,312,40,spicy,"naan, rice",dinner,5
+37,Tandoori Chicken,"chicken, yogurt, tandoori masala",nonveg,252,Roasted chicken marinated in yogurt and spices,3,375,43,spicy,"mint chutney, salad",starter,9
+38,Masala Dosa,"rice, urad dal, potato, curry leaves, mustard",veg,119,Crispy dosa stuffed with spicy mashed potatoes,1,318,22,spicy,"sambar, chutney",breakfast,1
+39,Paneer Butter Masala,"paneer, butter, tomato, cream, spices",veg,227,Rich and creamy paneer curry in butter and tomato base,2,329,33,spicy,"naan, salad",lunch,6
+40,Dal Makhani,"urad dal, rajma, butter, cream, spices",veg,175,Creamy slow-cooked lentils with spices,3,332,44,spicy,"naan, rice",dinner,3
+42,Idli Sambar,"rice, urad dal, tamarind, vegetables",veg,109,Steamed rice cakes served with tangy sambar,1,185,23,spicy,coconut chutney,breakfast,1
+43,Dal Makhani,"urad dal, rajma, butter, cream, spices",veg,176,Creamy slow-cooked lentils with spices,2,324,50,spicy,"naan, rice",dinner,2
+44,Butter Naan,"wheat flour, butter, yeast, milk",veg,43,Soft Indian flatbread brushed with butter,3,148,13,plain,"paneer, dal",lunch,9
+45,Tandoori Chicken,"chicken, yogurt, tandoori masala",nonveg,248,Roasted chicken marinated in yogurt and spices,3,354,40,spicy,"mint chutney, salad",starter,4
+46,Dal Makhani,"urad dal, rajma, butter, cream, spices",veg,180,Creamy slow-cooked lentils with spices,1,325,49,spicy,"naan, rice",dinner,9
+47,Chole Bhature,"chickpeas, flour, spices, onions",veg,153,Spicy chickpeas with deep-fried bread,2,424,31,spicy,"pickle, onion",lunch,5
+48,Rogan Josh,"lamb, yogurt, onions, spices",nonveg,301,Slow-cooked lamb curry from Kashmir,3,501,61,spicy,"naan, salad",dinner,3
+49,Masala Dosa,"rice, urad dal, potato, curry leaves, mustard",veg,130,Crispy dosa stuffed with spicy mashed potatoes,3,303,21,spicy,"sambar, chutney",breakfast,1
+50,Butter Naan,"wheat flour, butter, yeast, milk",veg,41,Soft Indian flatbread brushed with butter,3,161,5,plain,"paneer, dal",lunch,1
+51,Gulab Jamun,"milk solids, sugar, cardamom, rose water",veg,80,Soft deep-fried balls soaked in rose-scented sugar syrup,1,250,15,sweet,none,dinner,9
+52,Rasgulla,"chhena, sugar syrup",veg,70,Spongy white balls made from chhena soaked in sugar syrup,1,200,20,sweet,none,dinner,6
+53,Kheer,"rice, milk, sugar, cardamom, nuts",veg,60,Rice pudding flavored with cardamom and garnished with nuts,2,180,30,sweet,none,lunch,2
+54,Jalebi,"maida, sugar syrup, saffron",veg,50,Crispy fried coils soaked in saffron sugar syrup,1,300,25,sweet,rabri,breakfast,6
+55,Ladoo,"gram flour, ghee, sugar, cardamom",veg,40,Round sweet made with roasted gram flour and ghee,1,220,15,sweet,none,lunch,4
+56,Barfi,"condensed milk, sugar, nuts",veg,60,Fudge-like sweet with rich milky texture,1,210,20,sweet,none,dinner,6
+57,Halwa,"semolina, ghee, sugar, nuts",veg,55,Soft sweet made with roasted semolina and ghee,1,270,20,sweet,none,lunch,1
+58,Kulfi,"milk, sugar, cardamom, pistachios",veg,65,Traditional Indian ice cream made with condensed milk,1,190,10,sweet,none,dinner,7
+59,Phirni,"ground rice, milk, sugar, cardamom",veg,60,Creamy rice pudding served chilled,1,200,25,sweet,none,dinner,10
+60,Modak,"rice flour, jaggery, coconut",veg,50,Steamed sweet dumpling made during Ganesh Chaturthi,1,230,20,sweet,none,lunch,4
