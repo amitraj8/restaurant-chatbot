@@ -1,4 +1,10 @@
 import random
+import pandas as pd
+from transformers import pipeline
+
+def load_menu_data():
+    df = pd.read_csv("data/Restaurant data.csv")
+    return df[["menu/Name", "types(veg, nonveg)", "price", "inventory"]].astype(str)
 
 def wrap_response(query, answer):
     """Wrap TAPAS or rule-based output in a conversational reply."""
