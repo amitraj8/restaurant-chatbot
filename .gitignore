@@ -1,0 +1,33 @@
+    # Python virtual environment
+    .venv/
+    venv/
+    env/
+
+    # Rasa trained models
+    models/
+    .rasa/
+    __pycache__/
+
+    # Large Python library files (if you encounter others)
+    *.pyd
+    *.dll
+    *.so
+
+    # Common Python build artifacts
+    *.pyc
+    *.pyo
+    .Python
+    build/
+    dist/
+    *.egg-info/
+    .pytest_cache/
+
+    # Jupyter Notebook / VS Code artifacts
+    .ipynb_checkpoints
+    .vscode/
+    .DS_Store
+
+    # Logs
+    *.log
+    logs/
+    
